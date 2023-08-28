@@ -10,7 +10,7 @@ require("./util.js");
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({
-    extended: true
+    extended: false
 }));
 app.use(express.static("public"));
 
@@ -25,6 +25,7 @@ app.use(express.static("public"));
 
 
 require("./routes/home")(app);
+require("./routes/about")(app);
 
 app.listen(3000, function(){
   console.log("Server started on port 3000.");
