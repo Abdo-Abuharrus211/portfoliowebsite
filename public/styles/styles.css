@@ -8,7 +8,7 @@
 
 body {
     padding-bottom: 0;
-    background-color: var(--background);
+    background-image: linear-gradient(180deg, var(--background), var(--primary));
     color: var(--text);
 }
 
@@ -27,6 +27,17 @@ a:hover {
 
 /* ///////////////// */
 /* HOME PAGE STYLES  */
+
+.banner-box{
+    margin: 0;
+    text-align: center;
+}
+
+.banner-img{
+    width: 100%;
+    height: auto;
+}
+
 .intro-box {
     background-color: var(--secondary);
     border-radius: 10px;
