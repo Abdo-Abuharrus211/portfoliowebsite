@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const app = express();
 
+require("./util.js");
 
 //Set up stuff...
 app.set("view engine", "ejs");
