@@ -23,9 +23,10 @@ app.use(express.static("public"));
 //   res.send("Hello");
 // });
 
-
+// These import the individual pages and 'require' when app is launched
 require("./routes/home")(app);
 require("./routes/about")(app);
+require("./routes/projects")(app);
 
 app.listen(3000, function(){
   console.log("Server started on port 3000.");
