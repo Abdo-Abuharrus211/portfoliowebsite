@@ -1,30 +1,60 @@
 <%- include('partials/header') %>
 
-
     <main>
         <h1>
             Projects
         </h1>
-        
+
         <section>
-            <div class="container projects-box">
+            <div class="container project-box" onclick="handleClick('http:\/\/knmzsfqcht.us18.qoddiapp.com/')">
                 <div class=" container-fluid row">
                     <h3>PCRigger</h3>
                     <div class="col-md-8">
-                        <p>Add Text here</p>
+                        <p>Introducing PCRigger from DaWei5: An AI-powered assistant designed for first-time PC
+                            builders. We simplify the complex world of PC assembly, ensuring that every requirement is
+                            met, without the confusion and challenges typically associated with building a computer.</p>
                     </div>
                     <div class="col-md-4">
-                        <img src="..." alt="add image here" class="img-fluid">
+                        <img src="/images/logo.png" alt="PCRigger Logo" class="img-fluid">
                     </div>
                 </div>
-
             </div>
+
+            <div class="container project-box" onclick="handleClick('https:\/\/revival-1800-202310-dtc01.web.app/')">
+                <div class="container-fluid row">
+                    <h3>ReVival</h3>
+                    <div class="col-md-4">
+                        <img src="..." alt="ReVival Logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Introducing ReVival: a comprehensive app designed to support communities during and after
+                            extreme weather events. By aggregating essential information and guiding users to local
+                            resources through an intuitive and visually engaging interface, we ensure affected areas
+                            remain informed and ready for recovery.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container project-box" onclick="handleClick('url')">
+                <div class="container-fluid row">
+                    <h3>Project Name</h3>
+                    <div class="col-md-4">
+                        <img src="..." alt="ReVival Logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <p>...</p>
+                    </div>
+                </div>
+            </div> -->
+
+
         </section>
     </main>
 
     <%- include('partials/footer') %>
 
-
-    <script>
-        document.title = "<%= pageTitle %> | Abdulqadir Abuharrus";
-      </script>
+        <script>
+            document.title = "<%= pageTitle %> | Abdulqadir Abuharrus";
+            function handleClick(url) {
+                window.open(url, "_blank"); // This will redirect the browser to the specified URL
+            }
+        </script>

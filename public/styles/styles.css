@@ -13,18 +13,59 @@ body {
     color: var(--text);
 }
 
-nav  {
+/* * GENERAL STYLING */
+h1,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+
+
+h3 {
+    width: 100%;
+    /* make h3 take full width */
+    padding-bottom: 10px;
+    /* some bottom padding for the title */
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    /* this adds the underline effect */
+    margin-bottom: 20px;
+    /* space between the title and content */
+    font-weight: 400;
+    /* slightly bolder to make it stand out */
+    transition: border-color 0.3s ease;
+    /* smooth transition for hover effects */
+}
+
+h3:hover {
+    border-color: var(--accent);
+    /* change border color on hover for a subtle effect */
+}
+
+/* MAIN CONTENT AREA */
+main {
+    padding: 5% 0;
+    width: 90%;
+    margin: 0 auto;
+    /* centers the main content */
+}
+
+
+
+nav {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid var(--accent);
     border-radius: 5px;
 }
 
-.nav-item{
+.nav-item {
     margin-right: 40px;
     border-radius: 5px;
 }
-.nav-link , .navbar-brand {
+
+.nav-link,
+.navbar-brand {
     color: var(--text);
     border-radius: 10px;
     padding: 0.5%;
@@ -32,7 +73,8 @@ nav  {
 
 }
 
-.nav-link:hover, .navbar-brand:hover {
+.nav-link:hover,
+.navbar-brand:hover {
     background-color: var(--primary);
 }
 
@@ -104,13 +146,60 @@ a:hover {
 
 
 
-/* //////////////// */
-/* PROJECTS PAGE STYLES */
-
+/* PROJECTS SECTION */
 .project-box {
     background-color: var(--secondary);
     border-radius: 10px;
-    padding: 2% 10% 2%;
-    margin: 5% 20% 20% 20%;
-    text-align: center;
+    padding: 3% 2%;
+    /* tweaked padding for better spacing */
+    margin: 3% 0;
+    /* Adjusted margins for better vertical spacing between projects */
+    transition: transform 0.3s ease;
+    /* smooth transform transition for hover effect */
+}
+
+.project-box:hover {
+    transform: scale(1.02);
+    /* subtle grow effect on hover */
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+    /* Adding a shadow on hover */
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.container.project-box {
+    cursor: pointer;
+}
+
+img.img-fluid {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    padding: 15% 5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 992px) {
+
+    /* Bootstrap's breakpoint for md */
+    h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .project-box {
+        margin: 5% 0;
+    }
 }
