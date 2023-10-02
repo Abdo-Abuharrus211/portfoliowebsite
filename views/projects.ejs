@@ -4,7 +4,7 @@
         <h1>Projects</h1>
 
         <!-- PCRigger Project -->
-        <div class="d-flex justify-content-center align-items-center full-height">
+        <div class="d-flex justify-content-center align-items-center full-height" data-aos="fade-up">
             <div class="container project-box" onclick="handleClick('http://knmzsfqcht.us18.qoddiapp.com/')">
                 <div class="row">
                     <h3>PCRigger</h3>
@@ -25,7 +25,7 @@
         </div>
 
         <!-- ReVival Project -->
-        <div class="d-flex justify-content-center align-items-center full-height">
+        <div class="d-flex justify-content-center align-items-center full-height" data-aos="fade-up">
             <div class="container project-box" onclick="handleClick('https://revival-1800-202310-dtc01.web.app/')">
                 <div class="row">
                     <h3>ReVival</h3>
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Uncomment if you have more projects to add
-<div class="d-flex justify-content-center align-items-center full-height">
+<div class="d-flex justify-content-center align-items-center full-height" data-aos="fade-up">
     <div class="container project-box" onclick="handleClick('url')">
         <div class="row">
             <h3>Project Name</h3>
@@ -67,7 +67,11 @@
 
         <script>
             document.title = "<%= pageTitle %> | Abdulqadir Abuharrus";
-
+            AOS.init({
+                duration: 800,
+                easing: 'ease', // Easing function to use (default is 'ease')
+                delay: 200
+            });
             function handleClick(url) {
                 window.open(url, "_blank"); // Opens the link in a new tab
             }

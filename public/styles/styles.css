@@ -71,32 +71,88 @@ main {
     /* centers the main content */
 }
 
-
+/* Navbar */
 
 nav {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-bottom: 2px solid var(--accent);
     border-radius: 5px;
+    padding-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-item {
-    margin-right: 40px;
+    margin-right: 20px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: rgba(114, 145, 151, 0.6);
 }
 
 .nav-link,
 .navbar-brand {
     color: var(--text);
-    border-radius: 10px;
-    padding: 0.5%;
+    border-radius: 5px;
+    padding: 0.8% 1.2%;
     background-color: rgba(114, 145, 151, 0.4);
-
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover,
 .navbar-brand:hover {
     background-color: var(--primary);
+    color: var(--background);
+}
+
+/* navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* FOOTER STYLES */
+
+footer {
+    margin-top: 20%;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    color: var(--text);
+    padding: 20px 0;
+    overflow: hidden;  /* Prevents potential overflow issues */
+}
+
+/* Remove this part if you decide not to use the hover effect
+footer:hover {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+*/
+
+footer h6, footer h4 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: var(--text);
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Optional - If you want to introduce icons */
+footer i.fa {
+    margin-right: 8px;
 }
 
 
@@ -110,10 +166,14 @@ nav {
     /* Added for positioning the hero text */
 }
 
+.banner-box:hover .banner-img {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
 .banner-img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    transition: transform 0.5s ease-in; /* This will create a zooming effect on hover */
 }
 
 .hero-text {
@@ -141,16 +201,18 @@ nav {
 
 .intro-pic {
     text-align: center;
-    width: 25%;
+    width: 80%;
     /* Adjusted width */
     border-radius: 20%;
     margin: 2% 5% 5% 5%;
 }
 
 .intro-header {
-    font-size: 40px;
+    /* padding: 0 5%; */
+    font-size: 2rem;
     color: var(--primary);
-    margin: 5% 20% 5% 20%;
+    /* margin: 3% 5% 5% 5%;/ */
+    min-height: 50px; /* or whatever height that accommodates your longest string */
 }
 
 /* //////////////// */
