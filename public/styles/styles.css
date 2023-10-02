@@ -1,5 +1,5 @@
 :root {
-     /* Stone theme */
+    /* Stone theme */
     --text: #f8f7f8;
     --background: #161316;
     --primary: #a5b1a6;
@@ -82,6 +82,7 @@ nav {
     border-radius: 5px;
     padding-top: 10px;
     transition: background-color 0.3s ease;
+    z-index: 1000;
 }
 
 nav:hover {
@@ -271,18 +272,20 @@ footer i.fa {
     background-color: var(--secondary);
     border-radius: 10px;
     padding: 3% 2%;
-    /* tweaked padding for better spacing */
     margin: 3% 0;
-    /* Adjusted margins for better vertical spacing between projects */
     transition: transform 0.3s ease;
-    /* smooth transform transition for hover effect */
 }
 
 .project-box:hover {
     transform: scale(1.02);
     /* subtle grow effect on hover */
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-    /* Adding a shadow on hover */
+}
+
+.proj-img{
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -293,7 +296,7 @@ footer i.fa {
 
 
 /* RESPONSIVENESS */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
     /* Bootstrap's breakpoint for md */
     h3 {
@@ -308,5 +311,23 @@ footer i.fa {
 
     .project-box {
         margin: 5% 0;
+    }
+    /* Mobile view adjustment */
+    .banner-img{
+        width: 100%;
+        height: auto;
+    }
+    .banner-box {
+        margin: 20% 0 10%;
+    }
+    .banner-box h1 {
+        display: none;
+    }
+    .banner-box p{
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    .proj-img{
+        width: 100%;
     }
 }
