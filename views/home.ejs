@@ -1,67 +1,39 @@
 <%- include('partials/header') %>
 
-
-
     <main>
 
-        <div class="container-fluid banner-box">
+        <!-- Hero/Banner Section -->
+        <div class="container-fluid banner-box position-relative">
             <img class="banner-img" src="/images/northshore mountains.JPG" alt="banner image">
+            <div class="hero-text position-absolute top-50 start-50 translate-middle">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Abdulqadir Abuharrus - Software Developer</p>
+            </div>
         </div>
 
-        <!-- <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <!-- Introduction Section -->
+        <div class="container intro-box my-5" data-aos="fade-up">
+            <div class="text-center">
+                <img class="intro-pic mb-3" src="/images/cropped headhsot.JPG" alt="headshot pic">
+                <h2 class="intro-header"></h2>
+                <p class="intro-text">I'm an aspiring Software Developer from Libya. Passionate about projects and
+                    products that
+                    improve our daily lives and make a difference be it big or small.</p>
+                <a href="/about" class="btn btn-secondary" id="about-btn">Read more</a>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
-
-        <div class="container intro-box">
-            <img class="intro-pic" src="/images/cropped headhsot.JPG" alt="headshot pic">
-            <h2 class="intro-header">Who's Abdo?</h2>
-            <h3>That's me!</h3>
-            <p class="intro-text">I'm an aspiring Software Developer from Libya. Passionate about projects and products that
-                improve our daily lives and make a difference be it big or small.</p>
-            <button id="about-btn" type="button" class="btn btn-secondary">Read more</button>
         </div>
+
     </main>
-
-
-
-
     <%- include('partials/footer') %>
-
-
         <script>
+            AOS.init();
+            var options = {
+                strings: ["Developer", "Designer", "Learner", "Problem Solver"
+                , "Software Developer", "Amateur Photographer", "Car Enthusiast"],
+                typeSpeed: 30,
+                backSpeed: 40,
+                loop: true
+            };
 
-            const aboutButton = $('#about-btn');
-            if (aboutButton) {
-                aboutButton.on('click', () => {
-                    window.location.href = '/about';
-                });
-            }
+            var typed = new Typed(".intro-header", options);
         </script>
