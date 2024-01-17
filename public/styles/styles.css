@@ -1,10 +1,10 @@
 :root {
-    /* Stone theme */
-    --text: #f8f7f8;
-    --background: #161316;
-    --primary: #a5b1a6;
-    --secondary: #0e1010;
-    --accent: #6d7e6e;
+    /* CyberNeon theme */
+    --text: #dff4fe;
+    --background: #011620;
+    --primary: #83ccfa;
+    --secondary: #8e07ac;
+    --accent: #f60faf;
 
 }
 
@@ -76,18 +76,18 @@ main {
 /* Navbar */
 
 nav {
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.3); */
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid var(--accent);
+    /* border-bottom: 2px solid var(--accent); */
     border-radius: 5px;
     padding-top: 10px;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
     z-index: 1000;
 }
 
-nav:hover {
+/* nav:hover {
     background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 
 .nav-item {
     margin-right: 20px;
@@ -104,36 +104,29 @@ nav:hover {
     color: var(--text);
     border-radius: 5px;
     padding: 0.8% 1.2%;
-    background-color: rgba(114, 145, 151, 0.4);
+    /* background-color: rgba(114, 145, 151, 0.4); */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover,
 .navbar-brand:hover {
-    background-color: var(--primary);
-    color: var(--background);
+    background-color: var(--secondary);
+    color: var(--text);
 }
 
-/* navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
-} */
 
 /* FOOTER STYLES */
-
 footer {
-    margin-top: 20%;
-    background: linear-gradient(to right, var(--secondary), var(--primary));
-    color: var(--text);
+    margin: 5% 0 0 0;
+    width: 100%;
+    color: var(--primary);
+    border-top: 2px solid var(--secondary);
+    bottom: 0;
     padding: 20px 0;
     overflow: hidden;
     /* Prevents potential overflow issues */
 }
 
-/* Remove this part if you decide not to use the hover effect
-footer:hover {
-    background: linear-gradient(to right, var(--primary), var(--secondary));
-}
-*/
 
 footer h6,
 footer h4 {
@@ -172,8 +165,7 @@ footer i.fa {
 }
 
 .banner-box:hover .banner-img {
-    transform: scale(1.05);
-    /* Slightly zoom in on hover */
+    transform: scale(1.15);
 }
 
 .banner-img {
@@ -205,49 +197,7 @@ footer i.fa {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
-.intro-pic {
-    text-align: center;
-    width: 80%;
-    /* Adjusted width */
-    border-radius: 20%;
-    margin: 2% 5% 5% 5%;
-}
 
-.intro-header {
-    /* padding: 0 5%; */
-    font-size: 2rem;
-    color: var(--primary);
-    /* margin: 3% 5% 5% 5%;/ */
-    min-height: 50px;
-    /* or whatever height that accommodates your longest string */
-}
-
-/* Skills & Technologies */
-.skills-box {
-    background-color: var(--secondary);
-    border-radius: 10px;
-    margin: 15% auto;
-    padding: 2% 5%;
-    text-align: center;
-}
-
-/* Personal Interests or Hobbies */
-.hobbies-box {
-    background-color: var(--secondary);
-    border-radius: 10px;
-    margin: 15% auto;
-    padding: 2% 5%;
-    text-align: center;
-}
-
-.hobby-img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-
-/* //////////////// */
 /* ABOUT PAGE REVAMP STYLES */
 
 /* Enhanced Whitespace */
@@ -256,24 +206,23 @@ footer i.fa {
 }
 
 /* Introduction Section */
-.about-intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-/* Education Section (and other sections) */
+.about-intro h2,
 .about-education h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-/* PROJECTS SECTION */
+/* PROJECTS PAGE */
 .project-box {
-    background-color: var(--secondary);
+    background-color: var(--background);
     border-radius: 10px;
     padding: 3% 2%;
     margin: 3% 0;
     transition: transform 0.3s ease;
+}
+
+.project-box h3{
+    color: var(--accent);
 }
 
 .project-box:hover {
@@ -282,7 +231,7 @@ footer i.fa {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
-.proj-img{
+.proj-img {
     width: 80%;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -312,22 +261,27 @@ footer i.fa {
     .project-box {
         margin: 5% 0;
     }
+
     /* Mobile view adjustment */
-    .banner-img{
+    .banner-img {
         width: 100%;
         height: auto;
     }
+
     .banner-box {
         margin: 20% 0 10%;
     }
+
     .banner-box h1 {
         display: none;
     }
-    .banner-box p{
+
+    .banner-box p {
         font-size: 1.125rem;
         font-weight: 400;
     }
-    .proj-img{
+
+    .proj-img {
         width: 100%;
     }
 }
