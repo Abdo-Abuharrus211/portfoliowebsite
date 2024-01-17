@@ -9,7 +9,8 @@ Personal website to serve as a portfolio
 - Modify the banner
 - add missing content
 - change banner photo
-- ajust images accordingly
+- Add interesting fonts
+- adjust colors accordingly
 - 
 
  
