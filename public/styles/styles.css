@@ -49,10 +49,9 @@ img.img-fluid {
     border-radius: 10px;
 }
 
-p {
+.text-box {
     font-size: 1.2rem;
     padding: 15% 5%;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 
@@ -70,7 +69,6 @@ main {
     padding: 5% 0;
     width: 90%;
     margin: 0 auto;
-    /* centers the main content */
 }
 
 /* Navbar */
@@ -85,21 +83,15 @@ nav {
     z-index: 1000;
 }
 
-/* nav:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-} */
-.navbar-toggler{
+.navbar-toggler {
     color: transparent;
 }
 
 .nav-item {
     margin-right: 20px;
     border-radius: 5px;
+    font-size: larger;
     transition: background-color 0.3s ease;
-}
-
-.nav-item:hover {
-    background-color: rgba(114, 145, 151, 0.6);
 }
 
 .nav-link,
@@ -107,14 +99,12 @@ nav {
     color: var(--text);
     border-radius: 5px;
     padding: 0.8% 1.2%;
-    /* background-color: rgba(114, 145, 151, 0.4); */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover,
 .navbar-brand:hover {
-    background-color: var(--secondary);
-    color: var(--text);
+    color: rgba(114, 145, 151, 0.6);
 }
 
 
@@ -165,29 +155,38 @@ footer i.fa {
     text-align: center;
     position: relative;
     padding: 0;
-    /* Added for positioning the hero text */
-}
-
-.banner-box:hover .banner-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/sunrise beach.JPG");
+    background-size: cover;
+    background-position: center;
+    overflow: visible;
+    z-index: 0;
+    transition: transform 0.5s ease-in;
     transform: scale(1.15);
 }
+
+/* .banner-box:hover {
+    transform: scale(1.2);
+} */
 
 .banner-img {
     width: 100%;
     height: auto;
     transition: transform 0.5s ease-in;
-    /* This will create a zooming effect on hover */
+    transform: scale(1.15);
+
 }
+
 
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: var(--text);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-    /* Enhance readability over image */
 }
 
 .intro-box {
@@ -225,7 +224,7 @@ footer i.fa {
     transition: transform 0.3s ease;
 }
 
-.project-box h3{
+.project-box h3 {
     color: var(--accent);
 }
 
