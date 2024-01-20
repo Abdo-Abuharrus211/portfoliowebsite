@@ -6,8 +6,14 @@
         <div class="container-fluid banner-box position-relative">
             <!-- <img class="banner-img" src="/images/sunrise beach.JPG" alt="banner image"> -->
             <div class="hero-text">
-                <h1>Ma Name Dev</h1>
-                <p>I'm <span>Abdo</span>, <br> I write Software to solve problems.</p>
+                <p class="banner-text">ABDO ABUHARRUS</p>
+                <span style="font-size: 1.2rem;">
+                    <p>Software Developer</p>
+                </span>
+            </div>
+
+            <div class="hero-message">
+                <p class="typed-text">I Write Software To Solve Problems :)</p>
             </div>
         </div>
 
@@ -20,12 +26,14 @@
         <script>
             AOS.init();
             var options = {
-                strings: ["Developer", "Designer", "Learner", "Problem Solver"
-                    , "Software Developer", "Amateur Photographer", "Car Enthusiast"],
+                // strings: ["Developer", "Designer", "Learner", "Problem Solver"
+                //     , "Software Developer", "Amateur Photographer", "Car Enthusiast"],
+                strings: ["","I Write Software To Solve Problems :)", "Photographing precious moments", "Exploring new horizons"],
                 typeSpeed: 30,
                 backSpeed: 40,
-                loop: true
+                loop: true,
+                showCursor: false,
             };
 
-            var typed = new Typed(".intro-header", options);
+            var typed = new Typed(".typed-text", options);
         </script>

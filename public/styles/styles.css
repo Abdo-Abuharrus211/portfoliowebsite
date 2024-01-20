@@ -1,11 +1,17 @@
 :root {
     /* CyberNeon theme */
-    --text: #dff4fe;
+    /* --text: #dff4fe;
     --background: #011620;
     --primary: #83ccfa;
     --secondary: #8e07ac;
-    --accent: #f60faf;
+    --accent: #f60faf; */
 
+    /* Garden theme */
+    --text: #eef9e8;
+    --background: #091606;
+    --primary: #a1e08d;
+    --secondary: #258a86;
+    --accent: #4595cd;
 }
 
 body {
@@ -16,7 +22,6 @@ body {
 }
 
 /* * GENERAL STYLING */
-h1,
 h3 {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 30px;
@@ -152,7 +157,6 @@ footer i.fa {
 
 .banner-box {
     margin: 0;
-    text-align: center;
     position: relative;
     padding: 0;
     width: 100%;
@@ -166,23 +170,33 @@ footer i.fa {
     transform: scale(1.15);
 }
 
-/* .banner-img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease-in;
-    transform: scale(1.15);
-
-} */
 
 .hero-text {
     position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 15%;
+    height: auto;
+    min-height: 200px;
+    transform: translate(-60%, -50%);
     text-align: left;
+    font: 400 2.4rem 'Ubuntu', sans-serif;
     color: var(--text);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
+
+.hero-message {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    text-align: left;
+    min-width: 400px;
+    font: 400 1.2rem 'Roboto', sans-serif, normal;
+    color: var(--text);
+    transform: translate(-40%, -50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
 
 .intro-box {
     background-color: var(--secondary);
