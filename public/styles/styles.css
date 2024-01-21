@@ -8,7 +8,7 @@
 
     /* Garden theme */
     --text: #eef9e8;
-    --background: #091606;
+    --background: #060e04;
     --primary: #a1e08d;
     --secondary: #258a86;
     --accent: #4595cd;
@@ -101,6 +101,7 @@ nav {
 
 .nav-link,
 .navbar-brand {
+    font-family: "Roboto", sans-serif;
     color: var(--text);
     border-radius: 5px;
     padding: 0.8% 1.2%;
