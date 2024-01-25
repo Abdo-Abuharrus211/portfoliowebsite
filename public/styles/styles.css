@@ -291,7 +291,7 @@ footer i.fa {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 428px) {
     nav {
         margin-bottom: 7%;
     }
