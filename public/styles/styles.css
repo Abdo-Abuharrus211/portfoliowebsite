@@ -1,11 +1,17 @@
 :root {
 
-    --text: #e1ebfe;
-    --background: #010f1e;
-    --primary: #79adfb;
-    --secondary: #a30574;
-    --accent: #f82032;
+    --text: #ede4e6;
+    --background: #0b0708;
+    --primary: #910f3e;
+    --secondary: #675d43;
+    --accent: #a9a97c;
 
+
+
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
 
 }
 
@@ -14,4 +20,40 @@ body {
     /* background-image: linear-gradient(180deg, var(--background), var(--primary)); */
     background-color: var(--background);
     color: var(--text);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: var(--background);
+    color: var(--accent);
+    margin-bottom: 7%;
+}
+
+.nav-item,
+.nav-link,
+.navbar-brand {
+    color: var(--text);
+}
+
+
+
+
+/* Home page style */
+#intro{
+    align-items: center;
+    height: 80vh;
+    margin-bottom: 7%;
+}
+
+.intro-phrase {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--accent);
+
+}
+
+.intro-img {
+    width: 80%;
 }
