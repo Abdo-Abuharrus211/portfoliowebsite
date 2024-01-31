@@ -1,3 +1,3 @@
 - [X] Pin nav to top    
-- [ ] Pin nav to bottom
-- [ ] make nav transparent
+- [X] make nav transparent
+ 
